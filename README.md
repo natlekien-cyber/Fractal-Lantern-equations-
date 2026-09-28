@@ -72,3 +72,32 @@ $$Q_{diss} \geq k_B T \ln 2 \cdot \left[ \kappa \cdot \left( \frac{L}{\ell_{micr
 
 ### 3. The Incompressible Coherence Constant ($\kappa$)
 The dimensionless parameter $\kappa$ (Kappa) represents **Lekien's Coherence Constant**. It defines the fundamental, non-zero information baseline of the universe's fabric. It acts as an absolute tax rate on structural transitions, ensuring that a hyper-dense, high-fidelity core network ($C_{micro}$) always survives the pruning process, preventing complete informational extinction.
+markdown
+---
+
+## Appendix E: Trans-Scalar Semantic Compression and Fractal Attention in LLMs (Validated V3)
+This appendix formalizes the execution of sub-quadratic attention mechanisms through fractional Hausdorff topologies, bounding algorithmic expansion beneath structural dissipation limits.
+
+### 1. The Localized Network Frame
+Let $N$ tokens be mapped onto a hierarchical tree or a metric network exhibiting a fractional Hausdorff dimension $D$ strictly bounded by $1 < D < 2$, such that the local ball volume satisfies:
+$$|B(i, r)| \leq K \cdot r^D$$
+
+To enforce the axiom [Cohérence = Survie], the token interaction graph bypasses dense quadratic evaluation $O(N^2)$ by applying a structural, data-independent routing mask $M$.
+
+### 2. The Scaling Theorem
+The attention mask $M$ is defined stochastically:
+*   $M_{ij} = 1$ if $d(i, j) \leq r_0$ (Strict Local Confinement)
+*   $M_{ij} \sim \text{Bernoulli}(c \cdot d(i, j)^{-D})$ if $d(i, j) > r_0$ (Long-Range Fractal Routing)
+
+Where $c$ is a structural density constant and $r_0$ represents the core processing radius. Under the Locality Hypothesis, the cumulative long-range attention mass decays following a power-law exponent $\gamma$:
+$$A_i(\{j : d(i, j) > r\}) \leq C \cdot r^{-\gamma}$$
+
+### 3. Complexity and Error Convergence
+1.  **Computational Cost**: The expected size of the active semantic set per token row is bounded by $E|S_i| \leq K \cdot r_0^D + O(c \cdot \log N)$, reducing the global network computational complexity to an optimal sub-quadratic boundary:
+$$\text{Total Complexity} = O(N \cdot (r_0^D + c \cdot \log N))$$
+
+2.  **L1 Approximation Error**: The expected reconstruction error between the dense attention matrix $A_i$ and the fractal compressed state $\tilde{A}_i$ converges strictly under the control of the local radius:
+$$E\|A_i - \tilde{A}_i\|_1 \leq 2 \cdot C \cdot r_0^{-\gamma}$$
+
+### 4. Hardware Implementation
+This theorem shifts the bottleneck from active digital computation to passive physical routing. In neuromorphic or analog photonics architectures, the fractal topology is engraved directly into the physical substrate. The data streams flow through pre-configured geometric channels, executing the attention filtering passively at room temperature, eliminating redundant communication friction, and aligning the infrastructure with biological efficiency constraints
